@@ -2,7 +2,9 @@ import './Navbar.css'
 
 import {Stack} from '@mui/material';
 import {Link} from 'react-router-dom';
+
 import {logo} from '../../utils/constants';
+import { SearchBar } from "../";
 
 export default function Navbar() {
     return (
@@ -12,7 +14,7 @@ export default function Navbar() {
             p={2}
             sx={{
                 position: 'sticky',
-                background: '#000',
+                background: '#282424',
                 top: 0,
                 justifyContent: 'space-between'
             }}>
@@ -20,12 +22,13 @@ export default function Navbar() {
                     to={"/"}
                     style={{
                         display: 'flex',
-                        background: '#000',
+                        background: '#282424',
                         top: 0,
                         justifyContent: 'space-between'
                     }}>
                     <img src={logo} alt="logo" height={45}/>
                 </Link>
+            <SearchBar />
         </Stack>
     )
 }

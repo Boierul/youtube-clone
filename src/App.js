@@ -2,29 +2,29 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import {Box} from '@mui/material'
 import './App.css';
 
-import { Navbar, Feed, VideoDetail, SearchFeed } from "./components/";
+import {Navbar, Feed, VideoDetail, SearchFeed} from "./components/";
 
 function App() {
     return (
         <BrowserRouter>
             {/* TODO delete the color attribute */}
-            <Box sx={{backgroundColor: "#000", color: "white"}}>
-                <Navbar />
+            <Box sx={{backgroundColor: "#282424", color: "white"}}>
+                <Navbar/>
                 <Routes>
                     <Route
                         path="/"
                         exact element={
                         <Feed/>
-                    } />
+                    }/>
                     <Route
                         path="/video/:id"
                         element={
-                        <VideoDetail/>                    } />
+                            <VideoDetail/>}/>
                     <Route
                         path="/search/:searchTerm"
                         element={
                             <SearchFeed/>
-                        } />
+                        }/>
                 </Routes>
             </Box>
         </BrowserRouter>
