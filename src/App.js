@@ -11,11 +11,11 @@ function App() {
             <Box sx={{backgroundColor: "#282424", color: "white"}}>
                 <Navbar/>
                 <Routes>
-                    <Route
-                        path="/"
-                        exact element={
-                        <Feed/>
-                    }/>
+                    {/*<Route*/}
+                    {/*    path="/"*/}
+                    {/*    exact element={*/}
+                    {/*    <Feed/>*/}
+                    {/*}/>*/}
                     <Route
                         path="/video/:id"
                         element={

@@ -11,18 +11,18 @@ export default function Navbar() {
         <Stack
             direction={"row"}
             alignItems={"center"}
-            p={2}
+            p={1}
             sx={{
                 position: 'sticky',
-                background: '#282424',
+                background: '#202020',
                 top: 0,
-                justifyContent: 'space-between'
             }}>
                 <Link
                     to={"/"}
                     style={{
+                        paddingLeft: 5,
                         display: 'flex',
-                        background: '#282424',
+                        background: '#202020',
                         top: 0,
                         justifyContent: 'space-between'
                     }}>
