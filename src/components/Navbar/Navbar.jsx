@@ -13,9 +13,10 @@ export default function Navbar() {
             alignItems={"center"}
             p={1}
             sx={{
-                position: 'sticky',
                 background: '#202020',
                 top: 0,
+                position: "sticky",
+                justifyContent: "relati"
             }}>
                 <Link
                     to={"/"}

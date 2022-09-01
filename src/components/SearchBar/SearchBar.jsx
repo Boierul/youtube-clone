@@ -8,7 +8,6 @@ import SearchIcon from '@mui/icons-material/Search';
 export default function SearchBar(){
     return(
         <Paper
-            className={'search-bar-form'}
             component="form"
             onSubmit={() => {
 
@@ -19,7 +18,8 @@ export default function SearchBar(){
                 paddingLeft: 20,
                 boxShadow: 'none',
                 marginRight: { sm: 5},
-                backgroundColor: "#202020"
+                backgroundColor: "#202020",
+
             }}>
 
             <input
@@ -33,10 +33,13 @@ export default function SearchBar(){
             <IconButton
                 type={"submit"}
                 sx={{
-                    p: '10px',
+                    p: '8px',
                     color: 'rgba(143, 141, 141, 0.87)'
                 }}>
-                    <SearchIcon className={"search-bar-icon"}/>
+                    <SearchIcon className={"search-bar-icon"}
+                    style={{
+                        width: "1rem",
+                    }}/>
             </IconButton>
         </Paper>
     )
