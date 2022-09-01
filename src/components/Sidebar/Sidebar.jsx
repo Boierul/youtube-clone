@@ -28,10 +28,15 @@ export default function Sidebar() {
                     <span
                         className={"category-btn-icon"}
                         style={{
-                            position: "relative"
+                            position: "relative",
                         }}
                     >{category.icon}</span>
-                    <span className={"category-btn-name"}>{category.name}</span>
+                    <span
+                        className={"category-btn-name"}
+                        style={{
+                            paddingRight: "15px"
+                        }}
+                    >{category.name}</span>
                 </button>
             ))}
 

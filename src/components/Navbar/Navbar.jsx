@@ -26,7 +26,11 @@ export default function Navbar() {
                         top: 0,
                         justifyContent: 'space-between'
                     }}>
-                    <img src={logo} alt="logo" height={45}/>
+                    <img className={"logo-img"}
+                         src={logo}
+                         alt="logo"
+                         height={35}
+                    />
                 </Link>
             <SearchBar />
         </Stack>

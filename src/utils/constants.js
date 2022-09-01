@@ -16,22 +16,18 @@ export const logo = 'https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube
 
 export const categories = [
     { name: 'New', icon: <HomeIcon />, },
-    { name: 'JS Mastery', icon: <CodeIcon />, },
     { name: 'Coding', icon: <CodeIcon />, },
-    { name: 'ReactJS', icon: <CodeIcon />, },
-    { name: 'NextJS', icon: <CodeIcon />, },
+    { name: 'Live', icon: <LiveTvIcon />, },
     { name: 'Music', icon: <MusicNoteIcon /> },
     { name: 'Education', icon: <SchoolIcon />, },
+    { name: 'Crypto', icon: <DeveloperModeIcon />, },
+    { name: 'Comedy', icon: <TheaterComedyIcon />, },
     { name: 'Podcast', icon: <GraphicEqIcon />, },
-    { name: 'Movie', icon: <OndemandVideoIcon />, },
-    { name: 'Gaming', icon: <SportsEsportsIcon />, },
-    { name: 'Live', icon: <LiveTvIcon />, },
-    { name: 'Sport', icon: <FitnessCenterIcon />, },
     { name: 'Fashion', icon: <CheckroomIcon />, },
     { name: 'Beauty', icon: <FaceRetouchingNaturalIcon />, },
-    { name: 'Comedy', icon: <TheaterComedyIcon />, },
-    { name: 'Gym', icon: <FitnessCenterIcon />, },
-    { name: 'Crypto', icon: <DeveloperModeIcon />, },
+    { name: 'Movie', icon: <OndemandVideoIcon />, },
+    { name: 'Gaming', icon: <SportsEsportsIcon />, },
+    { name: 'Sport', icon: <FitnessCenterIcon />, },
 ];
 
 export const demoThumbnailUrl = 'https://i.ibb.co/G2L2Gwp/API-Course.png';
