@@ -1,0 +1,20 @@
+.category-btn {
+    background-color: #202020;
+    color: whitesmoke;
+    border-color: transparent;
+    width: 170px;
+    padding: 3px;
+}
+
+.category-btn:hover {
+    background-color: rgba(75, 74, 74, 0.44);
+}
+
+.category-btn-icon > .MuiSvgIcon-root{
+
+}
+
+.category-btn-name {
+    margin-left: 10px;
+    font-size: 11px;
+}
