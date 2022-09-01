@@ -14,7 +14,13 @@ export default function Sidebar() {
                 height: {sx: 'auto', md: '95%'},
                 flexDirection: {md: 'column'},
                 padding: '10px',
-                margin: '2px'
+                margin: '2px',
+                '&::-webkit-scrollbar': {
+                    height: '0.7em'
+                },
+                '&::-webkit-scrollbar-thumb': {
+                    backgroundColor: '#4B4A4AE5'
+                }
             }}>
 
             {categories.map((category) => (

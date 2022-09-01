@@ -1,5 +1,5 @@
 import './Feed.css'
-import {Box, Stack} from "@mui/material";
+import {Box, Stack, Typography} from "@mui/material";
 import Sidebar from "../Sidebar/Sidebar";
 
 export default function Feed() {
@@ -22,6 +22,13 @@ export default function Feed() {
                 <Sidebar/>
 
             </Box>
+
+            <Box>
+                <Typography>
+                    <span>videos</span>
+                </Typography>
+            </Box>
+
         </Stack>
     )
 }
