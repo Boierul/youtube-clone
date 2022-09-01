@@ -3,9 +3,7 @@ import './Sidebar.css'
 import {Stack} from "@mui/material";
 import {categories} from "../../utils/constants";
 
-const selectedCategory = "New";
-
-export default function Sidebar() {
+export default function Sidebar({selectedCategory, setSelectedCategory}) {
     return (
         <Stack
             direction={"row"}
@@ -26,23 +24,26 @@ export default function Sidebar() {
             {categories.map((category) => (
                 <button
                     className={"category-btn"}
+                    onClick={() => setSelectedCategory(category.name)}
                     style={{
                         background: category.name === selectedCategory
                             && 'rgb(75, 74, 74)'
                     }}
-                >
+                    key={category.name}>
                     <span
                         className={"category-btn-icon"}
                         style={{
                             position: "relative",
-                        }}
-                    >{category.icon}</span>
+                        }}>
+                        {category.icon}
+                    </span>
                     <span
                         className={"category-btn-name"}
                         style={{
                             paddingRight: "15px"
-                        }}
-                    >{category.name}</span>
+                        }}>
+                            {category.name}
+                    </span>
                 </button>
             ))}
 

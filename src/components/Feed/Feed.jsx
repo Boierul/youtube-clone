@@ -1,8 +1,20 @@
 import './Feed.css'
+
 import {Box, Stack, Typography} from "@mui/material";
-import Sidebar from "../Sidebar/Sidebar";
+import {Videos, SideBar} from "../../components";
+
+import {fetchFromAPI} from "../../utils/fetchFromApi";
+import {useEffect, useState} from "react";
 
 export default function Feed() {
+
+    const [selectCategory, setSelectCategory] = useState('New');
+
+    useEffect(() => {
+        fetchFromAPI(`search?part=snippet&q=${selectCategory}`)
+    }, [selectCategory]);
+
+
     return (
         <Stack sx={{
             flexDirection: {
@@ -19,16 +31,26 @@ export default function Feed() {
                 px: {sx: 0, md: 2},
             }}>
 
-                <Sidebar/>
+                <SideBar
+                    selectedCategory={selectCategory}
+                    setSelectedCategory={setSelectCategory}
+                />
 
             </Box>
 
-            <Box>
-                <Typography>
-                    <span>videos</span>
+            <Box p={2}
+                 sx={{
+                     overflowY: 'auto',
+                     height: '90vh',
+                     flex: 2
+                 }}>
+                <Typography variant={"h5"}
+                            fontWeight={"bold"}
+                            mb={2}>
+                    <span>{selectCategory} videos</span>
                 </Typography>
+                <Videos videos={[]}/>
             </Box>
-
         </Stack>
     )
 }
