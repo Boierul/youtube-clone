@@ -3,18 +3,21 @@
     color: whitesmoke;
     border-color: transparent;
     width: 170px;
-    padding: 3px;
+    padding-left: 20px;
 }
 
 .category-btn:hover {
     background-color: rgba(75, 74, 74, 0.44);
 }
 
-.category-btn-icon > .MuiSvgIcon-root{
-
+.category-btn-icon > .MuiSvgIcon-root {
+    display: block;
+    font-size: 1rem;
+    position: absolute;
 }
 
 .category-btn-name {
+    padding: 0 12px;
     margin-left: 10px;
     font-size: 11px;
 }
