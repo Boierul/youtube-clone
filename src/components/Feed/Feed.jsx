@@ -9,9 +9,13 @@ import {useEffect, useState} from "react";
 export default function Feed() {
 
     const [selectCategory, setSelectCategory] = useState('New');
+    const [videos, setVideos] = useState([]);
 
     useEffect(() => {
         fetchFromAPI(`search?part=snippet&q=${selectCategory}`)
+            .then((data) => {
+                setVideos(data.items)
+            })
     }, [selectCategory]);
 
 
@@ -49,7 +53,7 @@ export default function Feed() {
                             mb={2}>
                     <span>{selectCategory} videos</span>
                 </Typography>
-                <Videos videos={[]}/>
+                <Videos videos={videos}/>
             </Box>
         </Stack>
     )
