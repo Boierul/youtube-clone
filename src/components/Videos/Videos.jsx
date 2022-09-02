@@ -8,9 +8,10 @@ export default function Videos({videos, direction}) {
         <Stack
             direction={direction || "row"}
             flexWrap="wrap"
-            justifyContent="start"
-            alignItems="start"
-            gap={2}>
+            justifyContent="center"
+            gap={2}
+            padding={'15px'}
+        >
 
             {videos.map((item, idx) => (
                 <Box key={idx}>
