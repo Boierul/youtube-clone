@@ -30,9 +30,9 @@ export const categories = [
     { name: 'Sport', icon: <FitnessCenterIcon />, },
 ];
 
-export const demoThumbnailUrl = 'https://i.ibb.co/G2L2Gwp/API-Course.png';
-export const demoChannelUrl = '/channel/UCmXmlB4-HJytD7wek0Uo97A';
-export const demoVideoUrl = '/video/GDa8kZLNhJ4';
-export const demoChannelTitle = 'JavaScript Mastery';
-export const demoVideoTitle = 'Build and Deploy 5 JavaScript & React API Projects in 10 Hours - Full Course | RapidAPI';
+export const demoThumbnailUrl = 'https://hcinfo.com/wp-content/uploads/2019/05/Demo-Video-Thumbnail-v2-1.jpg';
+export const demoChannelUrl = '/channel/UCuAXFkgsw1L7xaCfnd5JJOw';
+export const demoVideoUrl = '/video/dQw4w9WgXcQ&ab';
+export const demoChannelTitle = 'Demo Channel Title';
+export const demoVideoTitle = 'Demo Video Title';
 export const demoProfilePicture = 'http://dergipark.org.tr/assets/app/images/buddy_sample.png'
