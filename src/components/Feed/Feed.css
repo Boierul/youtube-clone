@@ -1,0 +1,6 @@
+.category-text {
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    display: flex;
+}

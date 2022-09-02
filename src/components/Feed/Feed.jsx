@@ -51,7 +51,7 @@ export default function Feed() {
                 <Typography variant={"h5"}
                             fontWeight={"bold"}
                             mb={2}>
-                    <span>{selectCategory} videos</span>
+                    <span className={"category-text"}>{selectCategory} videos</span>
                 </Typography>
                 <Videos videos={videos}/>
             </Box>

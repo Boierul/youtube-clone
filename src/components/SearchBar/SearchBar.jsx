@@ -3,8 +3,6 @@ import './SearchBar.css'
 import {Paper, IconButton} from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
 
-// M UI styling
-
 export default function SearchBar(){
     return(
         <Paper

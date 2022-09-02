@@ -7,7 +7,6 @@ import {Navbar, Feed, VideoDetail, SearchFeed} from "./components/";
 function App() {
     return (
         <BrowserRouter>
-            {/* TODO delete the color attribute */}
             <Box sx={{backgroundColor: "#202020FF", color: "white"}}>
                 <Navbar/>
                 <Routes>
